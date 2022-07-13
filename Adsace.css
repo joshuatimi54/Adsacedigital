@@ -23,12 +23,11 @@ a{
 }
 .Logo {
     width: 6%;
-    display: none;
     border-radius: 10%;
     border-radius: 0%;
     float: left;
     margin-left: 5%;
-    margin-top: 200px;
+    margin-top: 38px;
     cursor: pointer;
 }
 ul {
@@ -36,6 +35,8 @@ ul {
     padding: 1.5%;
     margin-left: 60%;
     overflow: hidden;
+    margin-top: 30px;
+    padding-bottom: 10px;
 }
 li {
     float: left;
@@ -119,7 +120,7 @@ p {
     border: 1px solid white;
     width: 80%;
     padding-top: 50px;
-    margin-top: 5%;
+    margin-top: 7%;
     border-radius: 20px;
     background-color: white;
     box-shadow:0 10px 10px 0 rgba(19, 35, 60, 0.6), 15px 15px rgba(19, 35, 60, 0.6);
@@ -133,7 +134,7 @@ p {
     float: left;
     text-align: left;
     padding-top: 60px;
-    padding-right: 50px;
+    padding-right: 30px;
 }
 
 .lay2{
