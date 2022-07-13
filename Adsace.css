@@ -23,6 +23,7 @@ a{
 }
 .Logo {
     width: 6%;
+    display: none;
     border-radius: 10%;
     float: left;
     margin-left: 5%;
