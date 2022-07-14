@@ -1,34 +1,82 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: url('IMG/Background\ 1.jpg');
-    background-repeat: no-repeat;
-    background-blend-mode: color-burn;
-    background-color: rgb(0, 0, 0, 0.3);
+    background-color: rgb(210,230,240);
+    width: 95%;
+}
+main {
+    text-align: center;
+    color: black;
+ }
+ h2{
+    font-size: 30px;
+    color: rgb(19,35,60);
+}
+h3{
+    color: rgb(19,35,60);
+}
+p {
+    font-size: 20px;
 }
 a{
     text-decoration: none;
     cursor: pointer;
 }
-
-header {
-    background-color: rgb(210,230,240);
-    display: block;
-    font-size: 18px;
-    width: 100%;
-    position: fixed !important;
-    padding: 0%;
-    margin: 0%;
-    margin: -150px -13px ;
+header{
+    background-color: white;
+    width: 105.2%;
+    margin-left: -7px;
+    margin-top: -22px;
+    padding: 10px;
+    position: fixed;
 }
 .Logo {
     width: 6%;
     border-radius: 10%;
-    border-radius: 0%;
     float: left;
     margin-left: 5%;
-    margin-top: 38px;
     cursor: pointer;
+    position: relative;
 }
+nav{
+    float: left;
+    width: 80px;
+    margin-top: 25px;
+}
+#nav{
+    margin-left: 70%;
+}
+.page1 {
+    background-image: url('IMG/Background\ 1.jpg');
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    width: 105%;
+    margin-left: -8px;
+    height: 450px;
+    padding-top: 18%;
+}
+h1{
+    font-size: 60px;
+    font-family: tenor sans;
+    font-weight: 900;
+    color: #13233c;
+}
+.span1 {
+    color: yellow;
+}
+.get {
+    margin-top: 60px;
+    font-size: 17px;
+    font-weight: 600;
+    color: yellow;
+    padding: 12px;
+    border-radius: 40px;
+    background-color: rgb(19,35,60);
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+
+/*
 ul {
     list-style-type: none;
     padding: 1.5%;
@@ -55,7 +103,11 @@ li a {
 div li i#Icon {
     margin-top: 50%;
 }
-.container {
+
+
+/* this was make a commet because
+it is not used in the html file*/
+/*.container {
   display: none;
   cursor: pointer;
 }
@@ -75,54 +127,15 @@ div li i#Icon {
  -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
-main {
-   margin-top: 10%; 
-   text-align: center;
-   color: black;
-}
-h1{
-    padding-top: 18%;
-    font-size: 60px;
-    font-family: tenor sans;
-    font-weight: 900 !important;
-    color: white;
-}
-h2{
-    font-size: 30px;
-    color: rgb(19,35,60);
-}
-h3{
-    color: rgb(19,35,60);
-}
-p {
-    font-size: 20px;
-}
-.par{
-    color: white;
-}
-.span1 {
-    color: yellow;
-}
-.get {
-    margin-top: 60px;
-    font-size: 17px;
-    font-weight: 600;
-    color: yellow;
-    padding: 12px;
-    border-radius: 40px;
-    background-color: rgb(19,35,60);
-    cursor: pointer;
-    margin-bottom: 60px;
-}
+*/
 .row1 {
     display: table;
     margin-left: auto;
-    margin-right: auto;
     padding: 100px;
     border: 1px solid white;
     width: 80%;
     padding-top: 50px;
-    margin-top: 7%;
+    margin-top: 5%;
     border-radius: 20px;
     background-color: white;
     box-shadow:0 10px 10px 0 rgba(19, 35, 60, 0.6), 15px 15px rgba(19, 35, 60, 0.6);
@@ -136,14 +149,13 @@ p {
     float: left;
     text-align: left;
     padding-top: 60px;
-    padding-right: 30px;
 }
 
 .lay2{
     float: left;
 }
-video{
-    width: 90%;
+.lay2 video{
+    width: 80%;
     box-shadow:0 10px 10px 0 rgba(19, 35, 60, 0.6);
     border-radius: 15px;
 }
@@ -286,26 +298,14 @@ footer{
     width: 105%;
     margin-left: -10px;
     margin-right: -10px;
-    height: 400px;
-}
-.footernav ul li a{
-    overflow: hidden;
-    color: white;
-}
-.footernav ul{
-    float: left;
-    margin-left: 37%;
-}
-.footernav::after{
-    content: "";
-    clear: both;
-    display: block;
+    height: 250px;
+    padding-top: 10%;
 }
 .lay12 img{
     width: 10%;
     border-radius: 10%;
     float: left;
-    margin-left: 5%;
+    margin-left: 0%;
     margin-top: 2%;
     cursor: pointer;
     margin-right: 10px;
@@ -322,10 +322,10 @@ footer h3{
     float: left;
 }
 .lay13 {
-    margin-left: -40%;
+    margin-left: -50%;
 }
 .lay14{
-    margin-left: -15%;
+    margin-left: -20%;
 }
 @media screen and (max-width: 600px) {
 body{
@@ -395,6 +395,7 @@ p{
     margin-top: 0%;
     height: auto;
     padding-bottom: 50px;
+    width: auto;
 }
 .subrow2{
     display: block;
@@ -406,6 +407,7 @@ p{
 .row3{
     border-top: none;
     display: block;
+    width: auto;
 }
 .lay6 img, .lay8 img{
     width: 100%;
@@ -453,9 +455,8 @@ p{
     display: inline-block;
     padding-top: 30px;
     background-color: #13233c;
-    width: 100%;
+    width: auto;
     margin-left: 0%;
-    margin-right: 100%;
     padding-left: 30px;
     padding-bottom: 50px;
 }
