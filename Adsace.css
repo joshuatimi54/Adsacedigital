@@ -6,8 +6,11 @@ body {
 main {
     text-align: center;
     color: black;
- }
- h2{
+}
+button:hover{
+    transform: scale(1.1, 1.1);
+}
+h2{
     font-size: 30px;
     color: rgb(19,35,60);
 }
@@ -25,7 +28,7 @@ header{
     background-color: white;
     width: 105.2%;
     margin-left: -7px;
-    margin-top: -22px;
+    margin-top: -8px;
     padding: 10px;
     position: fixed;
 }
@@ -48,6 +51,7 @@ nav{
 .page1 {
     background-image: url('IMG/Background\ 1.jpg');
     background-repeat: no-repeat;
+    background-color:rgb(19,35,60,0.3);
     background-blend-mode: color-burn;
     width: 105%;
     margin-left: -8px;
@@ -286,6 +290,7 @@ it is not used in the html file*/
     margin-top: -215px;
     float: right;
     margin-right: 8%;
+    border-radius: 15px;
 }
 .lay11::after{
     content: "";
@@ -329,7 +334,16 @@ footer h3{
 }
 @media screen and (max-width: 600px) {
 body{
-    background-size: contain;
+    width: 95%;
+}
+h1{
+    font-size: 45px;
+}
+h2{
+    font-size: 20px;
+}
+p{
+    font-size: 16px;
 }
 .container{
     display: none;
@@ -339,38 +353,30 @@ body{
     padding-bottom: 10px;
 }
 .Logo{
-    margin-top: 2.8%;
-    border-radius: 5px;
+    width: 10%;
+    margin-top: -5px;
 }
 header{
     display: inline-block;
-    margin-top: -10%;
-    padding-right: 100px;
+    height: 50px;
+    margin-top: -8px;
 }
-#topnavul li i{
-    display: none;
+nav{
+    margin-top: 10px;
 }
-#topnavul{
-    margin-left: 5%;
-    padding-top: -50px;
-    padding-bottom: 0%;
-    margin-top: -2%;
-    margin-bottom: 0%;
+#nav{
+    margin-left: 30%;
 }
-li a{
-    font-size: 14px;
-}
-h1{
-    font-size: 35px;
-}
-h2{
-    font-size: 20px;
-}
-p{
-    font-size: 16px;
+
+.page1{
+    background-size: 700px 410px;
+    padding-top: 28%;
+    height: 270px;
 }
 .par{
-    display: none;
+    font-size: 13px;
+    margin-top: -10px;
+    color: white;
 }
 .get{
     margin-top: 0px;
@@ -379,11 +385,12 @@ p{
     margin-bottom: 1%;
 }
 .row1{
-    width: auto;
+    width: 84%;
     padding: 20px;
     padding-left: 17%;
     border-radius: 0%;
     box-shadow: none;
+    margin-top: 0%;
     margin-left: -10px;
     margin-right: -10px;
 }
@@ -395,7 +402,7 @@ p{
     margin-top: 0%;
     height: auto;
     padding-bottom: 50px;
-    width: auto;
+    width: 105%;
 }
 .subrow2{
     display: block;
@@ -410,12 +417,12 @@ p{
     width: auto;
 }
 .lay6 img, .lay8 img{
-    width: 100%;
+    width: 103%;
     height: 350px;
 }
 .lay7{
     background-color: white;
-    width: 100%;
+    width: 103.5%;
     margin-top: 0%;
 }
 .lay7 h2{
@@ -440,6 +447,9 @@ p{
     margin-right: auto;
     border-radius: 0%;
     margin-top: 0%;
+}
+.lay10 h2{
+    margin-right: 0px;
 }
 .lay11 video{
     width: 100%;
