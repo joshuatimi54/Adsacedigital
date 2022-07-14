@@ -37,12 +37,14 @@ header{
     z-index: 2;
 }
 .Logo {
-    width: 6%;
+    width: 10%;
     border-radius: 10%;
     float: left;
     margin-left: 5%;
     cursor: pointer;
     position: relative;
+    margin-top: -30px;
+    margin-bottom: -25px;
 }
 nav{
     float: left;
@@ -159,7 +161,7 @@ it is not used in the html file*/
     float: left;
     margin-left: -20px;
 }
-hr{
+.row1 > hr{
     transform: rotate(90deg);
     height: 5px;
     width: 300px;
@@ -413,12 +415,29 @@ nav{
     margin-left: -10px;
     margin-right: -10px;
 }
-hr{
+.row1 > hr{
+    display: none;
     transform: none;
+    margin-top: 100px;
+    margin-left: -90px;
+}
+.lay1 hr{
+    height: 5px;
+    width: 420px;
+    background-color: #13233c;
+    z-index: -2;
+    margin-left: 0px;
 }
 .lay1{
     padding: 0%;
     margin: 0%;
+    margin-left: -20px;
+
+}
+.lay2 h2{
+    font-size: 18px;
+    margin-left: -20px;
+
 }
 .Row2{
     margin-top: 0%;
@@ -448,10 +467,11 @@ hr{
     margin-top: 0%;
 }
 .lay7 h2{
-    padding-top: 70px;
+    padding-top: 30px;
 }
 .talk{
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 .row4{
     display: block;
