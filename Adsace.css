@@ -430,7 +430,7 @@ nav{
 }
 .lay1 hr{
     height: 4px;
-    width: 300px;
+    width: 250px;
     background-color: #13233c;
     z-index: -2;
     margin-left: 0px;
@@ -524,7 +524,7 @@ nav{
     float: left;
 }
 .lay14{
-    margin-left: 50px;
+    margin-left: 0px;
     float: left;
 }
 }
