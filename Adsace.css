@@ -42,7 +42,6 @@ header{
     float: left;
     margin-left: 5%;
     cursor: pointer;
-    position: relative;
     margin-top: -30px;
     margin-bottom: -25px;
 }
@@ -121,7 +120,7 @@ div li i#Icon {
 
 /* this was make a commet because
 it is not used in the html file*/
-/*.container {
+.container {
   display: none;
   cursor: pointer;
 }
@@ -141,7 +140,7 @@ it is not used in the html file*/
  -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
-*/
+
 .row1 {
     display: table;
     margin-left: -7px;
@@ -352,7 +351,7 @@ footer h3{
 .lay14{
     margin-left: -20%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 body{
     width: 95%;
 }
@@ -366,27 +365,35 @@ p{
     font-size: 16px;
 }
 .container{
-    display: none;
-    float: right;
-    margin-top: 3%;
-    margin-right: 7%;
+    float: left;
+    margin-top: 2%;
+    margin-left: 5%;
     padding-bottom: 10px;
+    z-index: 4;
 }
 .Logo{
-    width: 10%;
-    margin-top: -5px;
+    width: 20%;
+    margin-top: -25px;
 }
 header{
     display: inline-block;
-    height: 50px;
+    height: fit-content;
     margin-top: -8px;
 }
-nav{
-    margin-top: 10px;
-    width: 80px;
-}
 #nav{
-    margin-left: 30%;
+    text-align: center;
+    margin-left: 0%;
+    background-color: #d2e6f0;
+    padding-bottom: 50px;
+}
+nav a, .hom a{
+    color: yellow;
+}
+nav{
+    width: 100%;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-left: -11px;
 }
 
 .page1{
