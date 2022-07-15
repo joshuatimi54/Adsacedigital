@@ -391,11 +391,10 @@ nav a, .hom a{
 }
 nav{
     width: 100%;
-    border: 2px solid black;
     margin-top: 20px;
     margin-left: -11px;
 }
-
+nav .hom
 .page1{
     background-size: 700px 410px;
     padding-top: 28%;
@@ -428,9 +427,13 @@ nav{
     margin-top: 100px;
     margin-left: -90px;
 }
+.Logo1{
+    margin-right: 100px;
+}
 .lay1 hr{
+    display: block;
     height: 4px;
-    width: 70%;
+    width: 90%;
     background-color: #13233c;
     z-index: -2;
     margin-left: 0px;
