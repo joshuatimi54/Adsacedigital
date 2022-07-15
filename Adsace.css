@@ -162,7 +162,7 @@ it is not used in the html file*/
 }
 .row1 > hr{
     transform: rotate(90deg);
-    height: 5px;
+    height: 4px;
     width: 300px;
     background-color: #13233c;
     z-index: -2;
@@ -176,14 +176,14 @@ it is not used in the html file*/
     margin-top: -110px;
     margin-left: 50px;
 }
-
+.lay1 hr{
+    display: none;
+}
 .lay2{
     float: left;
 }
-.lay2 video{
-    width: 80%;
-    box-shadow:0 10px 10px 0 rgba(19, 35, 60, 0.6);
-    border-radius: 15px;
+.lay2 h2{
+   text-align: center;
 }
 .Row2{
     padding-top: 50px;
@@ -429,8 +429,8 @@ nav{
     margin-left: -90px;
 }
 .lay1 hr{
-    height: 5px;
-    width: 420px;
+    height: 4px;
+    width: 300px;
     background-color: #13233c;
     z-index: -2;
     margin-left: 0px;
