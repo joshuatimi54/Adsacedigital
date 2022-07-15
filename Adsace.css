@@ -428,7 +428,7 @@ h1{
     color: white;
     width: 70%;
     float: left;
-    margin-left: 60px;
+    margin-left: 50px;
 }
 .par br{
     display: none;
@@ -538,6 +538,9 @@ h1{
     font-size: 14px;
     width: 119px;
     padding: 10px;
+}
+.kofit1{
+    margin-left: 0px;
 }
 .lay11 video{
     width: 100%;
