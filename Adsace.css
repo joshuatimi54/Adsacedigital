@@ -531,6 +531,14 @@ h1{
 .lay10 h2{
     margin-right: 0px;
 }
+.lay10 p{
+    margin-left: 20px;
+}
+.page{
+    font-size: 14px;
+    width: 119px;
+    padding: 10px;
+}
 .lay11 video{
     width: 100%;
     margin-left: 0%;
