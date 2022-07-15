@@ -71,12 +71,16 @@ h1{
     font-family: tenor sans;
     font-weight: 900;
     color: #13233c;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 2s;
 }
 .span1 {
     color: yellow;
 }
 .par{
     color: white;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 2s;
 }
 .get {
     margin-top: 60px;
@@ -88,6 +92,8 @@ h1{
     background-color: rgb(19,35,60);
     cursor: pointer;
     margin-bottom: 60px;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 2s;
 }
 
 
