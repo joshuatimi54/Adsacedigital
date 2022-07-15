@@ -388,17 +388,17 @@ p{
 }
 .Logo{
     width: 20%;
-    margin-top: -20px;
+    margin-top: -10px;
 }
 header{
     display: inline-block;
-    height: 60px;
+    height: 50px;
     margin-top: -8px;
 }
 #nav{
     display: none;
     text-align: center;
-    margin-left: 0%;
+    margin-left: -9px;
     height: 900px;
     background-color: #d2e6f0;
     padding-top: 100px;
@@ -428,7 +428,7 @@ h1{
     color: white;
     width: 70%;
     float: left;
-    margin-left: 80px;
+    margin-left: 60px;
 }
 .par br{
     display: none;
