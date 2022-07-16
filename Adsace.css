@@ -446,8 +446,8 @@ h1{
     border-radius: 0%;
     box-shadow: none;
     margin-top: 0%;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -8px;
+    margin-right: -8px;
 }
 .row1 > hr{
     display: none;
@@ -496,13 +496,15 @@ h1{
     width: auto;
 }
 .lay6 img, .lay8 img{
-    width: 103%;
+    width: 104%;
     height: 350px;
+    margin-left: 1px;
 }
 .lay7{
     background-color: white;
-    width: 103.5%;
+    width: 104%;
     margin-top: 0%;
+    margin-left: 0px;
 }
 .lay7 h2{
     padding-top: 30px;
@@ -516,15 +518,17 @@ h1{
     margin-top: 0%;
 }
 .lay9 img{
-    width: 100%;
+    width: 101%;
     z-index: 0;
-    margin-left: 0%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: -2px;
     border-radius: 0%;  
 }
 .lay10{
     width: 90%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: -2px;
     border-radius: 0%;
     margin-top: 0%;
 }
@@ -542,15 +546,21 @@ h1{
 .kofit1{
     margin-left: 0px;
 }
+.kofit2{
+    display: none;
+}
 .lay11 video{
-    width: 100%;
+    width: 101%;
     margin-left: 0%;
-    margin-right: 0%;
+    margin-right: -3px;
     border-radius: 0%;
     margin-top: 0%;
 }
 .footernav ul{
     display: none;
+}
+footer{
+    background-color:#d2e6f0;
 }
 .row5{
     display: inline-block;
@@ -558,12 +568,15 @@ h1{
     background-color: #13233c;
     width: auto;
     margin-left: 0%;
+    margin-right: -3px;
+    margin-bottom: -5px;
     padding-left: 30px;
     padding-bottom: 50px;
 }
 .lay13{
     margin-left: 0%;
     float: left;
+    margin-right: 15px;
 }
 .lay14{
     margin-left: 0px;
