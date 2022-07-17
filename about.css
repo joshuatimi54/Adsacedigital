@@ -108,7 +108,7 @@ nav a{
   width: 100%;
   height: 180px;
   margin-top: 0px;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 .row1 h1{
   font-size: 30px;
@@ -120,7 +120,6 @@ nav a{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 14px;
 }
 .row2{
   text-align: left;
@@ -249,6 +248,68 @@ h3{
   margin-top: 10px;
 }
 
+@media only screen and (min-width: 768px){
+  h2{
+    font-size: 33px;
+  }
+  p{
+    font-size: 20px;
+  }
+  header{
+    height: 75px;
+  }
+  .Logo{
+    margin-top: -30px;
+  }
+  .row1{
+    height: 200px;
+    padding-top: 150px;
+  }
+  .row1 h1{
+    font-size: 60px;
+  }
+  .lay2 img{
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+  }
+  table{
+    border-spacing: 20px;
+  }
+  .box1 img, .box4 img{
+    width: 250px;
+    height: 250px;
+  }
+  .box2 img, .box3 img{
+    width: 375px;
+    height: 250px;
+  }
+  .box2 img{
+    margin-left: -125px;  
+  }
+  .lay4{
+    margin-bottom: 75px;
+  }
+  .row5 img{
+    width: 25%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  .row6 img{
+    width: 25%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  .last{
+    height: 450px;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 600px;
+  }
+  .lay14{
+    margin-left: 20px;
+    margin-right: 150px;
+  }
+}
 
 /*body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
