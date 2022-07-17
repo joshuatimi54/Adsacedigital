@@ -41,6 +41,7 @@ header{
   float: left;
   margin-left: 5%;
   cursor: pointer;
+  margin-top: -8px;
 }
 #nav{
   display: none;
@@ -234,20 +235,18 @@ table{
   margin-right: auto;
 }
 .lay13 img{
+
   width: 25%;
 }
-.lay13 img, .lay14, .lay15{
+.lay13, .lay14, .lay15{
   float: left;
   color: #13233c;
 }
-.lay14 a, .lay15 a, h3{
+.lay14 a, .lay15 a, h3, .lay13 i{
   color: #13233c;
 }
-.lay14{
-  margin-left: -75px;
-}
 h3{
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 
