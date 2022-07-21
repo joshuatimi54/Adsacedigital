@@ -6,5 +6,5 @@ function opennav(x){
         } else {
           x.style.display = "block";
         }
-  }
+}
   
