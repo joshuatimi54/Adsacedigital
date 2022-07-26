@@ -30,10 +30,6 @@ header{
   margin-top: -8px;
   background-color: rgb(210,230,240);
   width: 100%;
- /* margin-left: -7px;
-  margin-top: -8px;
-  padding: 10px;
-  z-index: 2;*/
 }
 .Logo {
   width: 20%;
@@ -41,28 +37,34 @@ header{
   float: left;
   margin-left: 5%;
   cursor: pointer;
-  margin-top: -8px;
+  margin-top: 0px;
+  aspect-ratio:1.3;
 }
-#nav{
+#ul{
   display: none;
   text-align: center;
-  margin-left: -9px;
+  margin-left: 0px;
   height: 768px;
   background-color: #d2e6f0;
   padding-top: 100px;
   padding-bottom: 50px;
-  transition: 5s;
+  transition: width 5s;
 }
-nav a, .hom a{
+ul a, .hom a{
   color: #13233c;
 }
-nav{
+ul{
+  list-style-type: none;
   width: 100%;
   margin-top: 20px;
   margin-left: -11px;
 }
-nav a{
+#ul a{
+  padding: 20px ;
   color: #13233c;
+}
+.dropdown-content{
+  display: none;
 }
 .container{
   display: block;
@@ -247,6 +249,9 @@ h3{
   margin-top: 10px;
 }
 
+
+
+
 @media only screen and (min-width: 768px){
   h2{
     font-size: 33px;
@@ -259,6 +264,7 @@ h3{
   }
   .Logo{
     margin-top: -30px;
+    aspect-ratio: 1;
   }
   .row1{
     height: 200px;
@@ -311,24 +317,64 @@ h3{
 }
 
 
+
+
 @media only screen and (min-width: 1000px){
   header{
     height: 100px;
   }
   .Logo {
-    margin-top: -40px;
-    max-width: 200px;
+    margin-top: -65px;
+    width: 200px;
     transition: 1s;
+    aspect-ratio: 1;
   }
-  #nav{
+  #ul{
     display: block;
     height: auto;
     margin-left: 60%;
-    padding: 25px;
+    padding: 0px;
   }
-  nav a{
+  ul a{
+    padding: 30px 10px 30px ;
     float: left;
-    margin-right: 30px;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  li a:hover{
+    color: yellow;
+  }
+  li a:active{
+    color: yellow;
+  }
+  .dropdown-content {
+    margin: 79px 150px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: #13233c;
+    width: fit-content;
+    padding: 12px 16px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content p:hover {
+    color: yellow;
+    background-color: #13233c;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: grid;
+  }
+  
+  .dropdown:hover .dropbtn {
+    color: yellow;
   }
   .container{
     display: none;
