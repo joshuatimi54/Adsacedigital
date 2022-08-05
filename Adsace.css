@@ -2,69 +2,28 @@
   margin: 0px;
   padding: 0px;
 }
-
-img{
-    width: 100px;
-}
-video{
-    width: 100px;
-}
-main, footer, email{
-    width: 10%;
-    font-size: 10px;
-}
-
-
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: black;
 }
-button:hover{
-  transform: scale(1.1, 1.1);
+h1{
+  font-size: 24px;
 }
 h2{
-  font-size: 18px;
-  color: rgb(19,35,60);
+  font-size: 20px;
 }
 h3{
-  color: rgb(19,35,60);
+  font-size: 16px;
 }
-p {
+p{
   font-size: 14px;
-}
-a{
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.topnav{
-    display: flex;
-    position: fixed;
-    background-color: rgb(210,230,240);
-    width: 70%;
-}
-.Logo {
-    width: 20%;
-    border-radius: 10%;
-    float: left;
-    margin-left: 2%;
-    cursor: pointer;
-    margin-top: 0px;
-  }
-#ul{
-    display: none;
-}
-
-
-.dropdown-content{
-  display: none;
 }
 .container{
   display: block;
   cursor: pointer;
-  float: left;
+  float: right;
   margin-top: 3%;
-  margin-left: 40%;
+  margin-right: 10%;
   padding-bottom: 10px;
   z-index: 4;
 }
@@ -77,9 +36,9 @@ a{
 }
 .change{
   display: block;
-  float: left;
+  float: right;
   margin-top: 3%;
-  margin-left: 40%;
+  margin-right: 10%;
   padding-bottom: 10px;
   z-index: 4;
 }
@@ -93,4 +52,260 @@ a{
   transform: rotate(45deg) translate(-4px, 0px);
 }
 
-
+header{
+  display: flex;
+  position: fixed;
+  margin: 0%;
+}
+.Logo{
+  width: 10%;
+  margin-left: 20px;
+}
+#nav{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background-color: rgb(19,35,60);
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+  padding-top: 50px;
+}
+ ul li{
+  padding: 10px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+.dropdown-content{
+  display: none;
+  background-color: white;
+  width: 100%;
+  height: auto;
+}
+.dropdown-content a{
+  color: rgb(19,35,60);
+}
+.dropdown-content p{
+  padding: 10px;
+}
+main{
+  padding-top: 0px;
+}
+img{
+  width: 10%;
+}
+.slideshow{
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  background-color: rgb(.4);
+}
+.slideshow li span {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 0%;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  z-index: -4;
+  -webkit-backface-visibility: hidden;
+  -webkit-animation: imageAnimation 24s linear infinite 0s;
+  -moz-animation: imageAnimation 24s linear infinite 0s;
+  -o-animation: imageAnimation 24s linear infinite 0s;
+  -ms-animation: imageAnimation 24s linear infinite 0s;
+  animation: imageAnimation 24s linear infinite 0s;
+}
+.slideshow li:nth-child(1) span { 
+  background-image: url('IMG/Background\ 1.jpg');
+  background-color: rgb(0,0,0,0.3);
+  background-blend-mode: color;
+}
+.slideshow li:nth-child(2) span {
+    background-image: url('IMG/aboutbackground1.jpg');
+    background-color: rgb(0,0,0,0.3);
+    background-blend-mode: color;
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    -o-animation-delay: 8s;
+    -ms-animation-delay: 8s;
+    animation-delay: 8s;
+}
+.slideshow li:nth-child(3) span {
+    background-image: url('IMG/38193.jpg');
+    background-color: rgb(0,0,0,0.3);
+    background-blend-mode: color;
+    -webkit-animation-delay: 16s;
+    -moz-animation-delay: 16s;
+    -o-animation-delay: 16s;
+    -ms-animation-delay: 16s;
+    animation-delay: 16s;
+}
+@-webkit-keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	    animation-timing-function: ease-in;
+	}
+	10% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	    animation-timing-function: ease-out;
+	}
+	35% {
+	    opacity: 1;
+	    transform: scale(1.1);
+	}
+	50% {
+	    opacity: 0;
+	    transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+}
+@-moz-keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	    animation-timing-function: ease-in;
+	}
+	10% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	    animation-timing-function: ease-out;
+	}
+	35% {
+	    opacity: 1;
+	    transform: scale(1.1);
+	}
+	50% {
+	    opacity: 0;
+	    transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+}
+@-o-keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	    animation-timing-function: ease-in;
+	}
+	10% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	    animation-timing-function: ease-out;
+	}
+	35% {
+	    opacity: 1;
+	    transform: scale(1.1);
+	}
+	50% {
+	    opacity: 0;
+	    transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+}
+@-moz-keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	    animation-timing-function: ease-in;
+	}
+	10% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	    animation-timing-function: ease-out;
+	}
+	35% {
+	    opacity: 1;
+	    transform: scale(1.1);
+	}
+	50% {
+	    opacity: 0;
+	    transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+}
+@keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	    animation-timing-function: ease-in;
+	}
+	10% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	    animation-timing-function: ease-out;
+	}
+	35% {
+	    opacity: 1;
+	    transform: scale(1.1);
+	}
+	50% {
+	    opacity: 0;
+	    transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+}
+.page1{
+  width: 90%;
+  margin: auto;
+  padding: 70px 20px 70px 20px;
+  text-align: center;
+}
+.page1 h1 span{
+  color: yellow;
+}
+.page1 h1{
+  color: rgb(19,35,60);
+  font-family: 'tenor sans';
+  font-size: 30px;
+}
+.page1 br{
+  display: none;
+}
+.page1 p{
+  color: white;
+  font-size: 12px;
+}
+.row1{
+  width: 90%;
+  margin: auto;
+}
+.row1 img{
+  display: none;
+}
+.row1 hr{
+  width: 90%;
+  height: 1px;
+  background-color: rgb(19,35,60);
+}
+.lay1 hr{
+  margin-bottom: 10px;
+}
+.lay2 {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.row2{
+  text-align: center;
+  color: white;
+  padding: 20px 0px 10px 0px;
+  background-color: rgb(19,35,60);
+}
+.row2 h3{
+  margin-bottom: 10px;
+}
+.row2 img{
+  width: 100%;
+}
+.lay3 img, .lay4 img, .lay5 img{
+  width: 15%;
+}
+.lay3, .lay4, .lay5{
+  padding: 20PX 20PX 20PX 20PX;
+}
+.row3{
+  text-align: center;
+}

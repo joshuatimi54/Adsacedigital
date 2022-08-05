@@ -7,12 +7,10 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Adsace Digital Agency</title>
     <link rel="icon" type="image/x-icon" href="IMG/logo dark theme.jpg" />
     <link rel="stylesheet" href="Adsace.css" />
-    <script src="Adsace.js"></script>
+
   </head>
   <body>
     <header>
@@ -23,25 +21,36 @@
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
-        <ul id="ul">
-          <li class="hom"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropbtn">Services</a>
-            <div class="dropdown-content">
-              <p><a href="#">Branding & Logo </a></p>
-              <p><a href="#">Video Digital </a></p>
-              <p><a href="#">Website Design</a></p>
-            </div>
-          </li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
+        <div id="nav">
+          <ul id="ul">
+            <li class="hom"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">Serrvices</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn" onclick="dropdown()">Pricing plan</a>
+              <div class="dropdown-content">
+                <p><a href="#">Branding & Logo </a></p>
+                <p><a href="#">Video Digital </a></p>
+                <p><a href="#">Website Design</a></p>
+              </div>
+            </li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </div>
       </div>
     </header>
-    <main>
+    <hr>
+    <main id="main">
+      <div class="background">
+        <ul class="slideshow">
+          <li><span></span></li>
+          <li><span></span></li>
+          <li><span></span></li>
+        </ul>
+      </div>
       <div class="page1">
         <div class="word1">
-          <p><h1><span class="span1">Adsace</span> Digital Agency</h1></p>
+          <p><h1><span>Adsace</span> Digital Agency</h1></p>
           <p class="par">
             Adsace digital agency has been running for a few years now and has
             worked with <br />
@@ -72,19 +81,21 @@
               your <br> business by developing content that
               resonates with your target audience.
             </p>
-            <hr>
           </div>
           <div class="lay2">
-            <h2>
+            <h3>
               We will take your 
               business to the next level.
-            </h2>
+            </h3>
           </div>
         </div>
-        <div class="Row2">
+        <div class="row2">
           <div>
             <h2>OUR DIGITAL MARKETING</h2>
             <h3>SERVICES</h3>
+          </div>
+          <div class="lay33">
+            <img src="IMG/38193.jpg" alt="">
           </div>
           <div class="lay3">
             <img src="IMG/braning & logo.png" alt="" />
@@ -92,9 +103,12 @@
             <p>
               Graphic design speaks louder! It is powerful and it increase brand
               awareness. Branding is essential for your business.
-              <br /><br /><br /><br>
+              <br /><br />
               <a href="">Learn more &gt; </a>
             </p>
+          </div>
+          <div class="lay44">
+            <img src="IMG/Background 1.jpg" alt="">
           </div>
           <div class="lay4">
             <img src="IMG/video marketing.png" alt="" />
@@ -102,9 +116,12 @@
             <p>
               Content is great. But, nothing beats amazing video -- in fact,
               it's 4x more likely to get shared than any other type of content.
-              <br /><br />
+              <br /><br>
               <a href="">Learn more &gt; </a>
             </p>
+          </div>
+          <div>
+            <img src="IMG/aboutbackground1.jpg" alt="">
           </div>
           <div class="lay5">
             <img src="IMG/website.png" alt="" />
@@ -112,16 +129,13 @@
             <p>
               Web designing is more than designing a website Our designers and
               developers will create a website for you that's beyond just normal
-              website.<br /><br /><br />
+              website.<br /><br />
               <a href="">Learn more &gt; </a>
             </p>
           </div>
         </div>
         <div class="row3">
           <div class="lay6">
-            <img src="IMG/logo dark theme.jpg" alt="" />
-          </div>
-          <div class="lay7">
             <h2>Why us</h2>
             <p>
               We have strategic partners to grow your brand. <br />
@@ -132,8 +146,8 @@
             </p>
             <a href=""><button class="talk">Let's talk</button></a>
           </div>
-          <div class="lay8">
-            <img src="IMG/logo dark theme.jpg" alt="" />
+          <div class="lay7">
+            <div></div>
           </div>
         </div>
         <div class="row4">
@@ -151,16 +165,10 @@
             <a href=""><button class="page kofit1">SERVICES</button></a>
             <a href=""><button class="page kofit2">CONTACT US</button></a>
           </div>
-          <div class="lay11">
-            <video
-              src="IMG/WhatsApp Video 2022-07-12 at 7.05.40 PM.mp4"
-              controls
-            ></video>
-          </div>
         </div>
       </div>
     </main>
-    <footer>
+    <footer id="footer">
       <div class="row5">
         <div class="lay12">
           <img src="IMG/logo.jpg" alt="logo" /><br /><br />
@@ -181,5 +189,6 @@
         </div>
       </div>
     </footer>
+    <script src="Adsace.js"></script>
   </body>
 </html>
