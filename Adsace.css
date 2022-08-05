@@ -319,6 +319,7 @@ img{
   padding: 20PX 20PX 20PX 20PX;
 }
 .row3{
+  width: 90%;
   color: white;
   text-align: center;
   background-image: url('IMG/banner\ \(1\).jpg');
@@ -327,8 +328,10 @@ img{
   padding: 20px 10px 20px 10px;
 }
 .lay7{
-  border: 1px solid rgb(255,255,255,0.5);
-  padding: 20px ;
+  margin: auto;
+  padding: 20px 5px 0px 5px;
+  width: 80%;
+  border: 1px solid rgb(255,255,255,0.0);
 }
 .lay7-slideshow{
   display: flex;
@@ -336,7 +339,9 @@ img{
   overflow-x: scroll;
 }
 .lay7a{
-  width: 600px;
-  margin: 20px;
+  padding: 15%;
+  margin: 25px 30px 25px 30px;
   border: 1px solid rgb(255,255,255,0.5);
+  animation: ;
+  transition: 3s linear infinite;
 }
