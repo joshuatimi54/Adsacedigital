@@ -8,25 +8,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adsace/About</title>
-    <link rel="icon" type="image/x-icon" href="IMG/logo dark theme.jpg" />
+    <link rel="icon" type="image/x-icon" href="IMG/logo.jpg" />
     <link rel="stylesheet" href="about.css" />
-    <script src="about.js"></script>
   </head>
   <body>
-    <header>
-      <div class="topnav">
-        <img id="loo" class="Logo" src="IMG/r.png" alt="Logo" />
-        <div class="container" id="navicon" onclick="opennav(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
+    <div class="nav-bar" id="navbar">
+      <img id="logo" class="Logo" src="IMG/r.png" alt="Logo" />
+      <div class="container" id="navicon" onclick="opennav(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="nav">
         <ul id="ul">
-          <li class="hom"><a href="index.html">Home</a></li>
+          <li class="active"><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="">Serrvices</a></li>
           <li class="dropdown">
-            <a href="#" class="dropbtn">Services</a>
-            <div class="dropdown-content">
+            <a href="#" class="dropbtn" onclick="dropdown()">Pricing plan</a>
+            <div id="dropdown-nav" class="dropdown-content">
               <p><a href="#">Branding & Logo </a></p>
               <p><a href="#">Video Digital </a></p>
               <p><a href="#">Website Design</a></p>
@@ -34,11 +34,9 @@
           </li>
           <li><a href="#">Contacts</a></li>
         </ul>
-        <div class="subbar"></div>
       </div>
-      <br /><br /><br /><br />
-    </header>
-    <main>
+    </div>
+    <main id="main">
       <div class="row1">
         <div>
           <h1>About us</h1>
@@ -195,7 +193,7 @@
         </div>
       </div>
     </main>
-    <div class="last">
+    <div id="footer" class="last">
       <div class="row7">
         <div class="lay13">
           <img src="IMG/r.png" alt="image" /><br />
@@ -230,5 +228,6 @@
         </div>
       </div>
     </div>
+    <script src="about.js"></script>
   </body>
 </html>

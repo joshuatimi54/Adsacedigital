@@ -1,3 +1,15 @@
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.backgroundColor = "rgb(210,230,240)";
+    document.getElementById("logo").style.width = "20%";
+  } else {
+    document.getElementById("navbar").style.backgroundColor = "rgb(210,230,240,0.0)";
+    document.getElementById("logo").style.width = "25%";
+  };
+};
+
 function opennav(x){
   x.classList.toggle("change");
   var x = document.getElementById("nav");
@@ -6,12 +18,7 @@ function opennav(x){
       } else {
         x.style.display = "block";
       }
-  var x = document.getElementById("main");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
+
   var x = document.getElementById("main");
       if (x.style.display === "none") {
         x.style.display = "block";
@@ -26,30 +33,11 @@ function opennav(x){
       }
 };
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function dropdown(){
+  var y = document.getElementById("dropdown-nav");
+      if (y.style.display === "none") {
+        y.style.display = "block";
+      } else {
+        y.style.display = "none";
+      }
 }
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-};
-
