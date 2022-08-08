@@ -6,6 +6,14 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: black;
 }
+body a {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	font-family: 'Roboto', sans-serif;
+}
 h1{
   font-size: 24px;
 }
@@ -30,7 +38,7 @@ p{
 .bar1, .bar2, .bar3 {
   width: 20px;
   height: 2px;
-  background-color: #333;
+  background-color: white;
   margin: 4px 0;
   transition: 0.4s;
 }
@@ -52,10 +60,11 @@ p{
   transform: rotate(45deg) translate(-4px, 0px);
 }
 
-header{
+.nav-bar{
   display: flex;
   position: fixed;
   margin: 0%;
+  z-index: 10;
 }
 .Logo{
   width: 10%;
@@ -102,7 +111,6 @@ img{
   width: 95%;
   height: 200px;
   position: absolute;
-  background-color: rgb(.4);
 }
 .slideshow li span {
   width: 100%;
@@ -114,7 +122,6 @@ img{
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  opacity: 1;
   z-index: -4;
   -webkit-backface-visibility: hidden;
   -webkit-animation: imageAnimation 24s linear infinite 0s;
@@ -124,14 +131,10 @@ img{
   animation: imageAnimation 24s linear infinite 0s;
 }
 .slideshow li:nth-child(1) span { 
-  background-image: url('IMG/Background\ 1.jpg');
-  background-color: rgb(0,0,0,0.3);
-  background-blend-mode: color;
+  background-image: url('IMG/banner3.jpg');
 }
 .slideshow li:nth-child(2) span {
-    background-image: url('IMG/aboutbackground1.jpg');
-    background-color: rgb(0,0,0,0.3);
-    background-blend-mode: color;
+    background-image: url('IMG/banner2.jpg');
     -webkit-animation-delay: 8s;
     -moz-animation-delay: 8s;
     -o-animation-delay: 8s;
@@ -139,9 +142,7 @@ img{
     animation-delay: 8s;
 }
 .slideshow li:nth-child(3) span {
-    background-image: url('IMG/38193.jpg');
-    background-color: rgb(0,0,0,0.3);
-    background-blend-mode: color;
+    background-image: url('IMG/banner1.jpg');
     -webkit-animation-delay: 16s;
     -moz-animation-delay: 16s;
     -o-animation-delay: 16s;
@@ -291,7 +292,7 @@ img{
 }
 .lay2 {
   font-size: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .row2{
   width: 90%;
@@ -319,12 +320,12 @@ img{
   padding: 20PX 20PX 20PX 20PX;
 }
 .row3{
-  width: 90%;
+  width: 95%;
   color: white;
   text-align: center;
   background-image: url('IMG/banner\ \(1\).jpg');
   background-color: rgb(0,0,0,0.3);
-  margin: 20px 0px 20px 0px;
+  margin: 50px 0px 20px 0px;
   padding: 20px 10px 20px 10px;
 }
 .lay7{
@@ -334,6 +335,7 @@ img{
   border: 1px solid rgb(255,255,255,0.0);
 }
 .lay7-slideshow{
+  overflow: hidden;
   display: flex;
   padding: 20px;
   overflow-x: scroll;
@@ -342,6 +344,115 @@ img{
   padding: 15%;
   margin: 25px 30px 25px 30px;
   border: 1px solid rgb(255,255,255,0.5);
-  animation: ;
-  transition: 3s linear infinite;
+}
+.lay7a:nth-child(1){
+  animation: animate 30s infinite;
+}
+@keyframes animate {
+  0%{
+    transform: translateX(0px);
+  }
+  7%{
+    transform: translatex(0px);
+  }
+  15%{
+    transform: translatex(0px);
+  }
+  25%{
+    transform: translatex(-300px);
+  }
+  35%{
+    transform: translatex(-300px);
+  }
+  50%{
+    transform: translatex(-300px);
+  }
+  75%{
+    transform: translatex(-300px);
+  }
+  85%{
+    transform: translatex(0px);
+  }
+  100%{
+    transform: translatex(0px);
+  }
+}
+.lay7a:nth-child(2){
+  animation: animate-2 30s infinite 3s;
+}
+@keyframes animate-2 {
+  0%{
+    transform: translateX(0px);
+  }
+  7%{
+    transform: translatex(0px);
+  }
+  15%{
+    transform: translatex(-240px);
+  }
+  25%{
+    transform: translatex(-240px);
+  }
+  35%{
+    transform: translatex(-240px);
+  }
+  45%{
+    transform: translatex(-500px);
+  }
+  50%{
+    transform: translatex(-500px);
+  }
+  65%{
+    transform: translatex(-500px);
+  }
+  70%{
+    transform: translatex(0px);
+  }
+  85%{
+    transform: translatex(0px);
+  }
+  100%{
+    transform: translatex(0px);
+  }
+}
+.lay7a:nth-child(3){
+  animation: animate-3 30s infinite 12s;
+}
+@keyframes animate-3 {
+  0%{
+    transform: translateX(0px);
+  }
+  7%{
+    transform: translatex(0px);
+  }
+  15%{
+    transform: translatex(-480px);
+  }
+  25%{
+    transform: translatex(-480px);
+  }
+  35%{
+    transform: translatex(-480px);
+  }
+  40%{
+    transform: translatex(0px);
+  }
+  50%{
+    transform: translatex(0px);
+  }
+  65%{
+    transform: translatex(0px);
+  }
+  70%{
+    transform: translatex(0px);
+  }
+  85%{
+    transform: translatex(0px);
+  }
+  100%{
+    transform: translatex(0px);
+  }
+}
+.row4{
+  padding: 20px;
 }
