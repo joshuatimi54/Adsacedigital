@@ -41,7 +41,7 @@ p{
   display: block;
   cursor: pointer;
   float: right;
-  margin-top: 15px;
+  margin-top: 3%;
   margin-right: 10%;
   padding-bottom: 10px;
   z-index: 4;
@@ -56,7 +56,7 @@ p{
 .change{
   display: block;
   float: right;
-  margin-top: 15px;
+  margin-top: 3%;
   margin-right: 10%;
   padding-bottom: 10px;
   z-index: 4;
@@ -330,6 +330,10 @@ main{
   background-color: rgb(19,35,60);
   box-shadow: 0px 5px 10px 3px rgb(0,0,0);
 }
+.row2-head{
+  text-align: center;
+  margin-bottom: 5px;
+}
 .row2 h3{
   margin: 5px;
 }
@@ -338,10 +342,7 @@ main{
   text-decoration: none;
   color: rgb(210,230,240);
 }
-.lay333{
-  background-color: white;
-  color: black;
-  padding: 15px;
+.lay33 img{
   border-radius: 10px 10px 0px 0px;
 }
 .row2 img{
@@ -364,7 +365,7 @@ main{
 .lay7{
   margin: auto;
   padding: 20px 5px 0px 5px;
-  width: 80%;
+  width: 70%;
   border: 1px solid rgb(255,255,255,0.0);
 }
 .lay7-slideshow{
@@ -400,10 +401,10 @@ main{
     transform: translatex(-300px);
   }
   45%{
-    transform: translatex(-550px);
+    transform: translatex(-560px);
   }
   55%{
-    transform: translatex(-550px);
+    transform: translatex(-560px);
   }
   65%{
     transform: translatex(0px);
@@ -463,4 +464,143 @@ main{
 }
 h3{
   margin-top: 10px;
+}
+
+
+
+
+@media only screen and (min-width: 768px){
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 24px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  p{
+    font-size: 18px;
+  }
+  .nav-bar{
+    height: 100px;
+    padding: 0%;
+  }
+  #nav{
+    height: auto;
+    padding: 50px 0px 50px 0px;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 40px;
+    height: 5px;
+    background-color: rgb(19,35,60);
+    margin: 8px 0;
+    transition: 0.4s;
+  }
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 5px);
+     transform: rotate(-45deg) translate(-8px, 5px);
+  }
+  .change .bar2 {opacity: 0;}
+  .change .bar3 {
+   -webkit-transform: rotate(45deg) translate(-8px, 1px);
+    transform: rotate(45deg) translate(-14px, -10px);
+  }
+  .Logo{
+    margin-right: 65%;
+  }
+  .page1{
+    padding: 150px 50px 0px 50px;
+    height: 250px;
+  }
+  .row1{
+    padding: 20px 0px 10px 50px;
+  }
+  .row2{
+    height: 700px;
+    border-radius: 0%;
+    width: 100%;
+  }
+  .row2 h3{
+    color: white;
+  }
+  .row2-sub-1{
+    display: flex;
+    height: 230px;
+  }
+  .diva{
+    margin: 0%;
+    width: 60%;
+  }
+  .diva img{
+    height: 230px;
+  }
+  .divb img{
+    width: 10%;
+  }
+  .divb{
+    width: 50%;
+  }
+  .lay44 img{
+    width: 48%;
+    position: absolute;
+    float: right;
+    margin-left: 22%;
+  }
+  .lay4{
+    height: 230px;
+    margin: 0% 0% 0% -60%;
+    padding: 10px;
+    width: 50%;
+  }
+  .row3{
+    padding-top: 75px;
+    margin: 0%;
+  }
+  .lay7-slideshow{
+    margin: auto;
+    width: 300px;
+  }
+  @keyframes animate {
+    0%{
+      transform: translateX(0px);
+    }
+    7%{
+      transform: translatex(0px);
+    }
+    15%{
+      transform: translatex(0px);
+    }
+    25%{
+      transform: translatex(-350px);
+    }
+    35%{
+      transform: translatex(-350px);
+    }
+    45%{
+      transform: translatex(-650px);
+    }
+    55%{
+      transform: translatex(-650px);
+    }
+    65%{
+      transform: translatex(0px);
+    }
+    85%{
+      transform: translatex(0px);
+    }
+    100%{
+      transform: translatex(0px);
+    }
+  }
+  .last{
+    height: auto;
+  }
+  .row7{
+    padding: 20px;
+    display: flex;
+  }
+  .lay13, .lay14, .lay15{
+    width: 30%;
+  }
 }
