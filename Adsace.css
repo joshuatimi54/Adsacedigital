@@ -76,13 +76,14 @@ p{
   height: 50px;
   display: flex;
   position: fixed;
+  background-color: rgb(210,230,240);
   margin: 0%;
   z-index: 10;
 }
 .Logo{
   cursor: pointer;
   width: 10%;
-  margin: 0px 225px 0px 10px;
+  margin: 0px 250px 0px 10px;
   z-index: 2;
 }
 #nav{
@@ -91,7 +92,6 @@ p{
   height: 700px;
   display: none;
   position: absolute;
-  background-color: rgb(210,230,240);
   text-align: center;
   transition: all 2s ease;
 }
@@ -507,7 +507,7 @@ h3{
     transform: rotate(45deg) translate(-14px, -10px);
   }
   .Logo{
-    margin-right: 65%;
+    margin-right: 70%;
   }
   .page1{
     padding: 150px 50px 0px 50px;
@@ -602,5 +602,102 @@ h3{
   }
   .lay13, .lay14, .lay15{
     width: 30%;
+  }
+}
+
+
+@media only screen and (min-width: 1000px){
+  .word1 h1{
+    font-size: 40px;
+  }
+  .par br{
+    display: block;
+  }
+  .word1 p{
+    font-size: 18px;
+    letter-spacing: normal;
+  }
+  .container{
+    display: none;
+  }
+  .nav-bar{
+    background-color: rgb(210,230,240,0.0);
+    height: 75px;
+  }
+  .Logo{
+    margin: 0px;
+    width: 8%;
+  }
+  #nav{
+    height: auto;
+    padding: 0%;
+    display: block;
+    position: relative;
+    float: right;
+  }
+  ul li a{
+    color: inherit;
+  }
+  #ul{
+    color: rgb(19,35,60);
+    padding: 15px 0px 0px 50%;
+  }
+  #ul li{
+    padding: 15px 20px;
+    border-radius: 10px;
+    float: left;
+  }
+  ul li:hover{
+    background-color: rgb(19,35,60);
+    color: rgb(210,230,240);
+  }
+  .dropdown-content {
+    color: rgb(19,35,60);
+    position: absolute;
+    width: auto;
+    text-align: left;
+    border-radius: 10px;
+    margin: 10px 0px 0px -50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0px;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .drop-link{
+    max-width: 200px;
+    padding: 0%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .drop-link li{
+    flex: 100%;
+  }
+  .drop-link li a{
+    color: inherit;
+  }
+  .drop-link li:hover{
+    border-radius: 0%;
+    color: rgb(210,230,240);
+    background-color: rgb(19,35,60);
+  }
+  .page1{
+    height: 500px;
+  }
+  .word1{
+    margin-top: 10%;
+  }
+  .row1{
+    padding: 6% 0% 3% 0%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row1 img{
+    display: block;
+    width: 20%;
+  }
+  .row1 hr{
+    display: block;
   }
 }
