@@ -89,7 +89,7 @@ p{
 #nav{
   margin: 0%;
   width: 100%;
-  height: 700px;
+  height: 900px;
   display: none;
   position: absolute;
   text-align: center;
@@ -107,11 +107,18 @@ ul li a {
   color: rgb(19,35,60);
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.active a{
+  color: rgba(170, 187, 18, 0.836);
+}
 .dropdown-content{
+  padding: 0%;
   display: none;
   background-color: white;
   width: 100%;
   height: auto;
+}
+.drop-link{
+  padding: 0%;
 }
 .dropdown-content a{
   color: rgb(19,35,60);
@@ -300,7 +307,7 @@ main{
   width: 90%;
   margin: auto;
 }
-.row1 img{
+.lay img{
   display: none;
 }
 .row1 hr{
@@ -420,6 +427,7 @@ main{
   padding: 20px;
 }
 .but11, .but12{
+  cursor: pointer;
   border-radius: 15px;
   font-size: 12px;
   width: 125px;
@@ -517,6 +525,7 @@ h3{
     padding: 20px 0px 10px 50px;
   }
   .row2{
+    padding: 0px;
     height: 700px;
     border-radius: 0%;
     width: 100%;
@@ -530,9 +539,10 @@ h3{
   }
   .diva{
     margin: 0%;
-    width: 60%;
+    width: 54.3%;
   }
   .diva img{
+    border-radius: 0%;
     height: 230px;
   }
   .divb img{
@@ -541,17 +551,13 @@ h3{
   .divb{
     width: 50%;
   }
-  .lay44 img{
-    width: 48%;
-    position: absolute;
-    float: right;
-    margin-left: 22%;
+  .lay4-s{
+   display: none;
   }
   .lay4{
     height: 230px;
-    margin: 0% 0% 0% -60%;
+    margin: 0%;
     padding: 10px;
-    width: 50%;
   }
   .row3{
     padding-top: 75px;
@@ -643,13 +649,20 @@ h3{
     padding: 15px 0px 0px 50%;
   }
   #ul li{
+    border: 3px 0px 0px 0px;
     padding: 15px 20px;
-    border-radius: 10px;
     float: left;
   }
   ul li:hover{
-    background-color: rgb(19,35,60);
-    color: rgb(210,230,240);
+    border-top: 3px solid rgb(19,35,60);
+    border-radius: 0%;
+    color: rgba(170, 187, 18, 0.836);
+    background-color: rgb(220,242,23,0.0);
+  }
+  .active{
+    border-bottom: 3px solid rgb(19,35,60);
+    border-radius: 5px 5px 0px 0px;
+    color: rgba(170, 187, 18, 0.836);
   }
   .dropdown-content {
     color: rgb(19,35,60);
@@ -678,8 +691,8 @@ h3{
     color: inherit;
   }
   .drop-link li:hover{
-    border-radius: 0%;
-    color: rgb(210,230,240);
+    border-radius: 10px;
+    color: rgba(170, 187, 18, 0.836);
     background-color: rgb(19,35,60);
   }
   .page1{
@@ -689,15 +702,85 @@ h3{
     margin-top: 10%;
   }
   .row1{
-    padding: 6% 0% 3% 0%;
+    padding: 10% 0% 20% 0%;
     display: flex;
     flex-wrap: wrap;
   }
-  .row1 img{
-    display: block;
+  .lay{
     width: 20%;
   }
-  .row1 hr{
+  .lay img{
     display: block;
+    width: 80%;
+  }
+  .row1 hr.line{
+    height: 2px;
+    width: 300px;
+    display: block;
+    position: absolute;
+    transform: rotate(90deg);
+    margin: -7.5% 0% 0% 3%;
+  }
+  .lay1 hr{
+    position: absolute;
+    margin-left: -17%;
+    height: 2px;
+    width: 1100px;
+  }
+  .lay1 p{
+    margin-top: 20px;
+  }
+  .row2{
+    margin: 50px auto 100px auto;
+    border-radius: 20px;
+    width: 70%;
+  }
+  .lay33 img{
+    border-radius: 20px 0px 0px 0px ;
+  }
+  .lay4{
+    padding: 20px;
+  }
+  .lay-5 img{
+    margin-bottom: 0px;
+    border-radius: 0px 0px 0px 20px;
+  }
+  .row2::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    margin: -170px 0px auto -683px;
+    height: 1000px;
+    background-image: linear-gradient(rgb(210,230,240), rgb(210,230,240,0.3));
+    z-index: -1;
+    float: right;
+  }
+  .row3{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .lay6, .lay7{
+    flex: 50%;
+  }
+  .lay6{
+    padding-top: 10%;
+  }
+  .lay7 h3{
+    color: white;
+  }
+  .row4{
+    padding: 5%;
+  }
+  .row4 h2{
+    margin-bottom: 10px;
+  }
+  .lay9{
+    margin-top: 10px;
+  }
+  .last{
+    padding: 50px 20px 100px 20px;
+  }
+  .lay13 a{
+    margin-left: 12px;
   }
 }

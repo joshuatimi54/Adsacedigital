@@ -53,6 +53,18 @@ function opennav(x){
         x.style.display = "block";
         x.style.backgroundColor = "rgb(210,230,240)";
       }
+  var x = document.getElementById("main");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+  var x = document.getElementById("footer");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
 };
 
 function dropdown(){
