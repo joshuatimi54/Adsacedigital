@@ -132,6 +132,22 @@ ul li a {
   color: rgb(19,35,60);
   transition: all 1s;
 }
+.up{
+  display: none;
+}
+div.jump-up{
+  position: fixed;
+  margin-top: 45%;
+  margin-left: 95%;
+  font-size: 25px;
+  background-color: rgb(19,35,60);
+  z-index: 1;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+}
+div.jump-up i{
+  color: rgb(210,230,240);
+}
 main{
   margin: 0%;
   padding: 0%;
@@ -452,8 +468,6 @@ main{
   100%{
     transform: translateY(0px);
   }
-
-
 }
 .last{
   background-color: rgb(210,230,240);
@@ -477,6 +491,9 @@ main{
 }
 .lay14 a, .lay15 a, h3, .lay13 i{
   color: rgb(19,35,60);
+}
+.lay14 a{
+  padding: 10px;
 }
 h3{
   margin-top: 10px;

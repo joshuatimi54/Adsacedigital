@@ -1,13 +1,21 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("up").classList.remove("up");
+  
+  } else {
+    document.getElementById("up").classList.add("up");
+
+  };
+
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.backgroundColor = "rgb(210,230,240)";
     function myFunction(x) {
       if (x.matches) { // If media query matches
         document.getElementById("logo").style.width = "20%";
       } else {
-        document.getElementById("logo").style.width = "10%";
+        document.getElementById("logo").style.width = "8%";
       }
     }
     
@@ -21,7 +29,7 @@ function scrollFunction() {
       if (x.matches) { // If media query matches
         document.getElementById("logo").style.width = "22%";
       } else {
-        document.getElementById("logo").style.width = "12%";
+        document.getElementById("logo").style.width = "9%";
       }
     }
     

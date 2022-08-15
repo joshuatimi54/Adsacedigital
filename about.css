@@ -124,6 +124,22 @@ ul li a {
   color: rgb(19,35,60);
   transition: all 1s;
 }
+.up{
+  display: none;
+}
+div.jump-up{
+  position: fixed;
+  margin-top: 45%;
+  margin-left: 95%;
+  font-size: 25px;
+  background-color: rgb(19,35,60);
+  z-index: 1;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+}
+div.jump-up i{
+  color: rgb(210,230,240);
+}
 main{
   margin: 0%;
   padding: 0%;
@@ -463,9 +479,10 @@ h3{
   }
 
 
+
   .row1{
-    height: 300px;
-    padding-top: 20%;
+    height: 250px;
+    padding-top: 10%;
     padding-bottom: 50px;
   }
   .word1{
