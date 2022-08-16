@@ -1,0 +1,364 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+}
+body a {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+.scrollable-place {
+  height: auto;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+button{
+    cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px ;
+  color: white;
+  background-color: rgb(19,35,60);
+}
+button:hover{
+  color: rgb(19,35,60);
+  background-color: rgb(210,230,240);
+  transition: 1s;
+}
+h1{
+  font-size: 24px;
+}
+h2{
+  font-size: 18px;
+}
+h3{
+  font-size: 16px;
+}
+p{
+  font-size: 14px;
+}
+.container{
+  display: block;
+  cursor: pointer;
+  float: right;
+  margin-top: 3%;
+  margin-right: 10%;
+  padding-bottom: 10px;
+  z-index: 4;
+}
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: rgb(19,35,60);
+  margin: 4px 0;
+  transition: 0.4s;
+}
+.change{
+  display: block;
+  float: right;
+  margin-top: 3%;
+  margin-right: 10%;
+  padding-bottom: 10px;
+  z-index: 4;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 5px);
+   transform: rotate(-45deg) translate(-8px, 5px);
+}
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+ -webkit-transform: rotate(45deg) translate(-4px, 0px);
+  transform: rotate(45deg) translate(-4px, 0px);
+}
+
+.nav-bar{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  position: fixed;
+  background-color: rgb(210,230,240);
+  margin: 0%;
+  z-index: 10;
+}
+.Logo{
+  cursor: pointer;
+  width: 10%;
+  margin: 0px 250px 0px 10px;
+  z-index: 2;
+}
+#nav{
+  margin: 0%;
+  width: 100%;
+  height: 900px;
+  display: none;
+  position: absolute;
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+  padding-top: 50px;
+}
+ ul li{
+  padding: 10px;
+}
+ul li a {
+  text-decoration: none;
+  color: rgb(19,35,60);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.active a{
+  color: rgba(170, 187, 18, 0.836);
+}
+.dropdown-content{
+  padding: 0%;
+  display: none;
+  background-color: white;
+  width: 100%;
+  height: auto;
+}
+.drop-link{
+  padding: 0%;
+}
+.dropdown-content a{
+  color: rgb(19,35,60);
+  transition: all 1s;
+}
+.up{
+  display: none;
+}
+div.jump-up{
+  position: fixed;
+  margin-top: 45%;
+  margin-left: 95%;
+  font-size: 25px;
+  background-color: rgb(19,35,60);
+  z-index: 1;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+}
+div.jump-up i{
+  color: rgb(210,230,240);
+}
+
+header::before{
+  opacity: 0.6;
+  content: "";
+  position: absolute;
+  width: 100%;
+  padding: 10% 0% 10% 0%;
+  height: 7.7%;
+  margin-top:-10%;
+  background-image: linear-gradient(to top left,rgb(19,35,60), rgb(19,35,60,0.7), rgb(210,230,240));
+}
+header{
+  padding: 10% 0% 10% 0%;
+  height: 50px;
+  background-image: url('IMG/g4.jpg');
+  background-size: cover;
+}
+header h1{
+  color: white;
+  margin-left: 100px;
+}
+
+
+.last{
+  background-color: rgb(210,230,240);
+  height: 450px;
+  margin-left: 0%;
+  margin-top: 20px;
+}
+.row7{
+ padding: 10px 20px ;
+}
+.row7 a{
+  text-decoration: none;
+  color: rgb(0,0,0);
+}
+.lay13 img{
+  width: 25%;
+}
+.lay13, .lay14, .lay15{
+  color: rgb(19,35,60);
+}
+.lay14 a, .lay15 a, h3, .lay13 i{
+  color: rgb(19,35,60);
+}
+.lay14 a{
+  padding: 10px;
+}
+h3{
+  margin-top: 10px;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px){
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 24px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  p{
+    font-size: 18px;
+  }
+  .nav-bar{
+    height: 100px;
+    padding: 0%;
+  }
+  #nav{
+    height: auto;
+    padding: 50px 0px 50px 0px;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 40px;
+    height: 5px;
+    background-color: rgb(19,35,60);
+    margin: 8px 0;
+    transition: 0.4s;
+  }
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 5px);
+     transform: rotate(-45deg) translate(-8px, 5px);
+  }
+  .change .bar2 {opacity: 0;}
+  .change .bar3 {
+   -webkit-transform: rotate(45deg) translate(-8px, 1px);
+    transform: rotate(45deg) translate(-14px, -10px);
+  }
+  .Logo{
+    margin-right: 70%;
+  }
+  .last{
+    height: auto;
+  }
+  .row7{
+    padding: 20px;
+    display: flex;
+  }
+  .lay13, .lay14, .lay15{
+    width: 30%;
+  }
+}
+
+
+
+
+
+@media only screen and (min-width: 1000px){
+  .word1 h1{
+    font-size: 40px;
+  }
+  .par br{
+    display: block;
+  }
+  .word1 p{
+    font-size: 18px;
+    letter-spacing: normal;
+  }
+  .container{
+    display: none;
+  }
+  .nav-bar{
+    background-color: rgb(210,230,240,0.0);
+    height: 75px;
+  }
+  .Logo{
+    margin: 0px;
+    width: 8%;
+  }
+  #nav{
+    height: auto;
+    padding: 0%;
+    display: block;
+    position: relative;
+    float: right;
+  }
+  ul li a{
+    color: inherit;
+  }
+  #ul{
+    color: rgb(19,35,60);
+    padding: 15px 0px 0px 50%;
+  }
+  #ul li{
+    border: 3px 0px 0px 0px;
+    padding: 15px 20px;
+    float: left;
+  }
+  ul li:hover{
+    border-top: 3px solid rgb(19,35,60);
+    border-radius: 0%;
+    color: rgba(170, 187, 18, 0.836);
+    background-color: rgb(220,242,23,0.0);
+  }
+  .active{
+    border-bottom: 3px solid rgb(19,35,60);
+    border-radius: 5px 5px 0px 0px;
+    color: rgba(170, 187, 18, 0.836);
+  }
+  .dropdown-content {
+    color: rgb(19,35,60);
+    position: absolute;
+    width: auto;
+    text-align: left;
+    border-radius: 10px;
+    margin: 10px 0px 0px -50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0px;
+    z-index: 1;
+    animation: nav 2s ease;
+  }
+  @keyframes nav {
+    0%{
+      transform: translateX(-100px);
+      opacity: 0.2;
+    }
+    100%{
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .drop-link{
+    max-width: 200px;
+    padding: 0%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .drop-link li{
+    flex: 100%;
+  }
+  .drop-link li a{
+    color: inherit;
+  }
+  .drop-link li:hover{
+    border-radius: 10px;
+    color: rgba(170, 187, 18, 0.836);
+    background-color: rgb(19,35,60);
+    transition: 1.5s;
+  }
+  .last{
+    padding: 50px 0px 100px 0px;
+  }
+  .lay13 a{
+    margin-left: 12px;
+  }
+}
