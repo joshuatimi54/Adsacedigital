@@ -135,7 +135,7 @@ ul li a {
 .up{
   display: none;
 }
-div.jump-up{
+div.jump{
   position: fixed;
   margin-top: 45%;
   margin-left: 95%;
@@ -145,7 +145,7 @@ div.jump-up{
   border-radius: 5px;
   padding: 10px 15px 10px 15px;
 }
-div.jump-up i{
+div.jump i{
   color: rgb(210,230,240);
 }
 

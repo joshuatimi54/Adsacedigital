@@ -190,10 +190,10 @@ header h1{
   border-radius: 2%;
   color: black;
   margin-top: 3%;
-  width: 30%;
+  width: 80%;
 }
 .lay1-1{
-  padding: 10% 1.5% 10% 5%;
+  padding: 10% 10% 10% 5%;
   border-radius: 2%;
   color: white;
   background-color: rgb(19,35,60);
@@ -418,6 +418,9 @@ h3{
     color: rgba(170, 187, 18, 0.836);
     background-color: rgb(19,35,60);
     transition: 1.5s;
+  }
+  .lay1{
+    width: 30%;
   }
 
 
