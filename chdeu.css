@@ -20,16 +20,18 @@ body a {
   height: 100%;
   overflow: hidden;
 }
-
-button{
-    cursor: pointer;
+button[type="submit"]{
+  font-size: 15px;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
   border-radius: 5px;
   padding: 5px;
-  margin: 10px ;
+  margin-top: 12px ;
   color: white;
   background-color: rgb(19,35,60);
 }
-button:hover{
+button[type="submit"]:hover{
   color: rgb(19,35,60);
   background-color: rgb(210,230,240);
   transition: 1s;
@@ -170,12 +172,80 @@ header h1{
   margin-left: 100px;
 }
 
+.row1{
+  padding: 20px;
+}
+.lay2{
+  display: flex;
+  justify-content: space-around;
+}
+.social button{
+  border-color: rgb(19,35,60);
+  margin: 25px auto;
+  border-radius: 10px;
+  width: 175px;
+  height: 200px;
+}
+.social button i{
+  color: rgb(19,35,60);
+  font-size: 100px;
+  margin: 0px 0px 20px 0px;
+  animation: icon 3s linear infinite 2s;
+}
+@keyframes icon {
+  0% {
+    transform: rotatey(360deg);
+  }
+  75%{
+    transform: rotatey(0deg);
+  }
+}
+
+.row2{
+  background-image: url('img/accountability.jpg');
+  background-size: cover;
+  background-color: rgba(0,0,0,0.5);
+  background-attachment: fixed;
+  background-blend-mode: color;
+  padding: 5% 0px;
+}
+.contact{
+  border: 2px solid rgb(19,35,60,0.5);
+  border-radius: 15px;
+  width: 40%;
+  margin: auto;
+  background-color: rgb(210,230,240,0.5);
+  padding: 25px;
+}
+label{
+  font-weight: 900;
+  padding: 5px;
+}
+input{
+  color: white;
+  font-size: 15px;
+  width: 100%;
+  height: 40px;
+  border-radius: 0px;
+  background-color: rgb(210,230,240,0.0);
+  border: 2px solid rgb(210,230,240,0.0);
+  border-bottom-color: rgb(19,35,60);
+  margin-bottom: 10px;
+}
+textarea{
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+}
+label[for="text"]{
+  width: 100%;
+}
 
 .last{
   background-color: rgb(210,230,240);
   height: 450px;
   margin-left: 0%;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 .row7{
  padding: 10px 20px ;
