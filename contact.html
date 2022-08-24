@@ -83,10 +83,11 @@
       </div>
       <div class="row2">
         <div class="contact">
-          <form action="">
+          <form action="https://formsubmit.co/joshuatimi09@gmail.com" method="POST">
             <label for="firstname">First Name</label>
             <input
               type="text"
+              id="firstname"
               name="firstname"
               placeholder="your name..."
               required
@@ -95,6 +96,7 @@
             <label for="lastname">Last Name</label>
             <input
               type="text"
+              id="lastname"
               name="lastname"
               placeholder="(surname)"
               required
@@ -103,6 +105,7 @@
             <label for="brandname">Company/Brand Name</label>
             <input
               type="text"
+              id="brandname"
               name="brandname"
               placeholder="Company/Brand Name"
             />
@@ -110,6 +113,7 @@
             <label for="number">Mobile Number</label>
             <input
               type="phone"
+              id="phone"
               name="number"
               placeholder="(+234)-813-305-1342"
               required
@@ -118,6 +122,7 @@
             <label for="email">Email</label>
             <input
               type="email"
+              id="email"
               name="email"
               placeholder="Email@gmail.com"
               required
@@ -125,7 +130,7 @@
 
             <label for="text">Short Note</label>
             <textarea name="text" id="note" cols="30" rows="10">
-Short note(optional)</textarea
+              Short note(optional)</textarea
             >
             <button type="submit">SEND</button>
           </form>
@@ -168,5 +173,17 @@ Short note(optional)</textarea
       </div>
     </div>
     <script src="Adsace.js"></script>
+    <!--script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          SecureToken: "8551e1be-8654-4483-9598-09ba187f7db9",
+          To: "joshuatimi09@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "New Contact Form Enquiry",
+          Body: "And this is the body",
+        }).then((message) => alert(message));
+      }
+    </script-->
   </body>
 </html>

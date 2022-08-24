@@ -38,7 +38,7 @@ h1{
   font-size: 24px;
 }
 h2{
-  font-size: 18px;
+  font-size: px;
 }
 h3{
   font-size: 16px;
@@ -328,6 +328,7 @@ main{
 .row1{
   width: 90%;
   margin: auto;
+  text-align: center;
 }
 .lay img{
   display: none;
@@ -338,11 +339,12 @@ main{
   height: 1px;
   background-color: rgb(19,35,60);
 }
-.lay1 h1 {
-  margin: 10px 0px 0px 0px;
+.lay1 h2 {
+  font-size: 25px;
+  margin: 10px 0px 10px 0px;
 }
 .lay1 hr{
-  display: block;
+  display: none;
   margin: 10px 0px 10px 0px;
 }
 .lay2 {
@@ -361,7 +363,7 @@ main{
 }
 .row2-head{
   text-align: center;
-  margin-bottom: 5px;
+  margin: 25px 0px 5px 0px;
 }
 .row2 h3{
   margin: 5px;
@@ -380,6 +382,9 @@ main{
 .lay3 img, .lay4 img, .lay5 img{
   width: 15%;
 }
+.lay4-e{
+  display: none;
+ }
 .lay3, .lay4, .lay5{
   padding: 20PX 20PX 20PX 20PX;
 }
