@@ -522,7 +522,7 @@ h3{
   h3{
     font-size: 20px;
   }
-  p{
+  p, .lay1 p, .lay6 p, .lay8 p{
     font-size: 14px;
   }
   .nav-bar{
@@ -651,6 +651,9 @@ h3{
 
 
 @media only screen and (min-width: 1000px){
+  p{
+    font-size: 18px;
+  }
   .word1 h1{
     font-size: 40px;
   }
