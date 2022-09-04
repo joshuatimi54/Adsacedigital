@@ -1,31 +1,17 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    function myFunction(x) {
-      if (x.matches) { // If media query matches
-        document.getElementById("up").classList.remove("up");
-      } else {
-        document.getElementById("up").classList.remove("up");
-        document.getElementById("up").classList.add("jump");
-      }
-    }
-    
-    var x = window.matchMedia("(max-width: 1000px)")
-    myFunction(x) // Call listener function at run time
-    x.addListener(myFunction) // Attach listener function on state changes
-  
-  } else {
-    document.getElementById("up").classList.add("up");
-  };
-
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.backgroundColor = "rgb(210,230,240)";
     function myFunction(x) {
       if (x.matches) { // If media query matches
         document.getElementById("logo").style.width = "20%";
+        document.getElementById("up").classList.remove("up");
+        document.getElementById("up").classList.add("jumper");
       } else {
         document.getElementById("logo").style.width = "8%";
+        document.getElementById("up").classList.remove("jumper");
+        document.getElementById("up").classList.add("up");
       }
     }
     
@@ -35,6 +21,8 @@ function scrollFunction() {
 
   } else {
     document.getElementById("navbar").style.backgroundColor = "rgb(210,230,240,0.0)";
+    document.getElementById("up").classList.add("jumper");
+    document.getElementById("up").classList.remove("up");
     function myFunction(x) {
       if (x.matches) { // If media query matches
         document.getElementById("logo").style.width = "22%";

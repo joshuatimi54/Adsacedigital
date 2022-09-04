@@ -89,9 +89,9 @@ p{
   margin: 0%;
   z-index: 10;
 }
+
 .Logo{
   cursor: pointer;
-  width: 10%;
   margin: 0px 250px 0px 10px;
   z-index: 2;
 }
@@ -132,13 +132,17 @@ ul li a {
   color: rgb(19,35,60);
   transition: all 1s;
 }
-.up{
+.jumper{
   display: none;
+}
+.up{
+  display: flex;
+  justify-content: right;
 }
 div.jump-up{
   position: fixed;
-  margin-top: 45%;
-  margin-left: 95%;
+  margin-top: 43%;
+  margin-right: 5%;
   font-size: 25px;
   background-color: rgb(19,35,60);
   z-index: 1;
@@ -747,12 +751,16 @@ h3{
     margin-top: 10%;
   }
   .row1{
-    padding: 10% 0% 20% 0%;
+    padding: 10% 0% 15% 0%;
     display: flex;
     flex-wrap: wrap;
   }
   .lay{
-    width: 20%;
+    flex: 20%;
+  }
+  .lay1{
+    text-align: left;
+    flex: 70%;
   }
   .lay img{
     display: block;
@@ -764,17 +772,19 @@ h3{
     display: block;
     position: absolute;
     transform: rotate(90deg);
-    margin: -7.5% 0% 0% 3%;
+    margin: -8% 0% 0% 8%;
   }
   .lay1 hr{
+    display: inline;
     position: absolute;
-    margin-left: -17%;
+    margin-left: -22%;
     height: 2px;
-    width: 1100px;
+    width: 1200px;
   }
   .lay1 p{
-    margin-top: 20px;
+    margin-top: 50px;
   }
+
   .row2{
     margin: 50px auto 100px auto;
     border-radius: 20px;
@@ -800,6 +810,10 @@ h3{
     z-index: -1;
     float: right;
   }
+  .lay4-e{
+    display: block;
+  }
+
   .row3{
     display: flex;
     flex-wrap: nowrap;
