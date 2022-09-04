@@ -347,6 +347,7 @@ h3{
     font-size: 60px;
   }
   .lay2 img{
+    width: 70%;
     border-top-right-radius: 75px;
     border-bottom-left-radius: 75px;
   }
@@ -371,6 +372,9 @@ h3{
     width: 25%;
     margin-top: 25px;
     margin-bottom: 15px;
+  }
+  .row5{
+    text-align: center;
   }
   .row6 img{
     width: 25%;
