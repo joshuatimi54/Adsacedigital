@@ -523,7 +523,7 @@ h3{
     font-size: 20px;
   }
   p{
-    font-size: 18px;
+    font-size: 14px;
   }
   .nav-bar{
     height: 100px;
@@ -588,6 +588,9 @@ h3{
   }
   .lay4-s{
    display: none;
+  }
+  .lay4-e{
+    display: block;
   }
   .lay4{
     height: 230px;
