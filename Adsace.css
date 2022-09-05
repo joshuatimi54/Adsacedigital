@@ -34,18 +34,6 @@ button:hover{
   transform: scale(1.1, 1.1);
   transition: 1s;
 }
-h1{
-  font-size: 24px;
-}
-h2{
-  font-size: px;
-}
-h3{
-  font-size: 16px;
-}
-p{
-  font-size: 14px;
-}
 .container{
   display: block;
   cursor: pointer;
@@ -132,26 +120,7 @@ ul li a {
   color: rgb(19,35,60);
   transition: all 1s;
 }
-.jumper{
-  display: none;
-}
-.up{
-  display: flex;
-  justify-content: right;
-}
-div.jump-up{
-  position: fixed;
-  margin-top: 43%;
-  margin-right: 5%;
-  font-size: 25px;
-  background-color: rgb(19,35,60);
-  z-index: 1;
-  border-radius: 5px;
-  padding: 10px 15px 10px 15px;
-}
-div.jump-up i{
-  color: rgb(210,230,240);
-}
+
 main{
   margin: 0%;
   padding: 0%;
@@ -456,6 +425,12 @@ main{
 }
 .row4{
   padding: 20px;
+  text-align: center;
+}
+.lay8{
+  text-align: center;
+  width: 80%;
+  margin: auto;
 }
 .but11, .but12{
   cursor: pointer;
@@ -522,7 +497,7 @@ h3{
   h3{
     font-size: 20px;
   }
-  p, .lay1 p, .lay6 p, .lay8 p{
+  .lay1 p, .lay6 p, .lay8 p{
     font-size: 14px;
   }
   .nav-bar{
@@ -651,7 +626,7 @@ h3{
 
 
 @media only screen and (min-width: 1000px){
-  p{
+  .lay1 p, .lay6 p, .lay8 p{
     font-size: 18px;
   }
   .word1 h1{

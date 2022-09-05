@@ -34,18 +34,7 @@ button:hover{
   background-color: rgb(210,230,240);
   transition: 1s;
 }
-h1{
-  font-size: 24px;
-}
-h2{
-  font-size: 18px;
-}
-h3{
-  font-size: 16px;
-}
-p{
-  font-size: 14px;
-}
+
 .container{
   display: block;
   cursor: pointer;
@@ -131,22 +120,6 @@ ul li a {
 .dropdown-content a{
   color: rgb(19,35,60);
   transition: all 1s;
-}
-.up{
-  display: none;
-}
-div.jump-up{
-  position: fixed;
-  margin-top: 45%;
-  margin-left: 95%;
-  font-size: 25px;
-  background-color: rgb(19,35,60);
-  z-index: 1;
-  border-radius: 5px;
-  padding: 10px 15px 10px 15px;
-}
-div.jump-up i{
-  color: rgb(210,230,240);
 }
 
 header::before{

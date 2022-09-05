@@ -34,18 +34,7 @@ button:hover{
   transform: scale(1.1, 1.1);
   transition: 1s;
 }
-h1{
-  font-size: 24px;
-}
-h2{
-  font-size: 18px;
-}
-h3{
-  font-size: 16px;
-}
-p{
-  font-size: 14px;
-}
+
 .container{
   display: block;
   cursor: pointer;
@@ -132,23 +121,6 @@ ul li a {
   color: rgb(19,35,60);
   transition: all 1s;
 }
-.up{
-  display: none;
-}
-div.jump{
-  position: fixed;
-  margin-top: 45%;
-  margin-left: 95%;
-  font-size: 25px;
-  background-color: rgb(19,35,60);
-  z-index: 1;
-  border-radius: 5px;
-  padding: 10px 15px 10px 15px;
-}
-div.jump i{
-  color: rgb(210,230,240);
-}
-
 header::before{
   opacity: 0.6;
   content: "";
@@ -527,7 +499,7 @@ h3{
     border-radius: 10px;
     color: rgba(170, 187, 18, 0.836);
     background-color: rgb(19,35,60);
-    transition: 1.5s;
+    transition: 1s;
   }
 
 
